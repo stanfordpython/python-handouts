@@ -157,10 +157,10 @@ virtualenvwrapper.user_scripts creating /Users/<username>/.virtualenvs/cs41/bin/
 virtualenvwrapper.user_scripts creating /Users/<username>/.virtualenvs/cs41/bin/get_env_details
 ```
 
-Now, if you run `workon`, you should see the `cs41` environment.
+Now, if you run `workon`, you should see the list of all environments, which now includes `cs41`.
 
 ```
-$ workon
+(cs41)$ workon
 cs41
 $
 ```
@@ -188,7 +188,8 @@ your new command prompt would be
 If you see this parenthesized environment name, it means that your environment is active. To deactivate the environment, simply run
 
 ```
-$ deactivate
+(cs41)$ deactivate
+$
 ```
 
 from a command prompt and you should see the parenthesized environment name disappear.
