@@ -66,7 +66,7 @@ $ py -3
 
 If that solved the problem, then everywhere you see `python3` below, replace it with `py -3`. 
 
-Try writing some Python in the interactive interpreter! When you're done, you can exit the interactive interpreter with CTRL+C (CMD+C on Windows) or by entering `quit()` at the Python command prompt.
+Try writing some Python in the interactive interpreter! When you're done, you can exit the interactive interpreter with CTRL+D (CMD+D on Windows) or by entering `quit()` at the Python command prompt.
 
 ## Getting `pip`
 
