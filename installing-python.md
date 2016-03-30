@@ -39,6 +39,8 @@ If you're running Windows, you need to download an MSI installer, either for [x8
 
 **Caution: When you are given the option of unchecking any 'optional' components, don't uncheck any. In particular, on the “Customize Python 3.4” screen, there should be an option called “Add python.exe to search path”. Make sure that box is checked!**
 
+As an alternative, you can consider the possibility of using a specialized shell that works better with Python development, like PowerShell, or of running a Virtual Machine (on Linux) for your development work.
+
 ---
 
 Let's check to see if Python is installed correctly!
