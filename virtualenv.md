@@ -23,7 +23,7 @@ this uses virtualenv to create a new virtual environment in the working director
 ### Activating and deactivating a virtual environment
 To activate, simply cd into the environment we created above then execute
 
-`$ source /bin/activate`
+`$ source bin/activate`
 
 Now you can play with the interactive interpreter inside your isolated environment using
 
