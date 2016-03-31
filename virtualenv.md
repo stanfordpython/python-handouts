@@ -1,5 +1,9 @@
 # Virtual Environments
+<<<<<<< HEAD
 ## What is a virtual environment?
+=======
+## What is a Virtual Environment?
+>>>>>>> 39cccd0f7d5d36cca9444d5e9ca2a2541ac3899f
 A virtual environment is simply an isolated folder that contains all the executables you need to build something awesome in Python, including code to run the interpreter, use the standard library (https://docs.python.org/2/library/), and install other 3rd-party libraries that we'll touch on towards the end of the quarter. 
 
 ## Why bother using virtual environments?
