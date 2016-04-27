@@ -1,5 +1,7 @@
 # Installing Python
 
+*Note: There are some lingering bugs in this installing guide. Most of the instructions are still good-to-go, but be aware this document is a work in progress.*
+
 In CS41, you'll be writing lots of Python code! Therefore, it's important that you get your development environment ready-to-go as soon as possible.
 
 ## Short Version
