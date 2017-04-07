@@ -1,4 +1,4 @@
-# Installing Python 3 with Virtual Environments
+# Installing Python 3 with Virtual Environments (Mac/Linux)
 
 In CS41, you'll be writing lots of Python code! Therefore, it's important that you get your development environment ready-to-go as soon as possible.
 
