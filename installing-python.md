@@ -261,10 +261,26 @@ Every time you develop code for CS41, you will need to run `workon cs41` in orde
 On Mac OS X running bash, you can accomplish this with
 
 ```
+$ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bash_profile
+$ echo "source <path/to/virtualenvwrapper.sh>" >> ~/.bash_profile 
 $ echo "workon cs41" >> ~/.bash_profile
 ```
 
-If you have a differnet shell startup script (for example, `~/.profile`), you will need to append the same line to the end of that startup script.
+To see that everything was appended correctly, run
+
+```
+$ tail ~/.bash_profile
+< ... possibly some other stuff ... >
+export WORKON_HOME=/Users/sredmond/.virtualenvs
+source /Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh
+workon cs41
+```
+
+or something similar.
+
+If you have a different shell startup script (for example, `~/.profile`), you will need to append the same line to the end of that startup script.
+
+Try opening a new Terminal / iTerm window, and running `workon cs41`, `python`, `ipython`, and `deactivate`.
 
 ### Aside: Text Editors
 
