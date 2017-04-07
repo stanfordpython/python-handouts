@@ -105,6 +105,7 @@ Next, we'll need to do some one-time setup to configure the virtual environment 
 
 ```
 $ export WORKON_HOME=$HOME/.virtualenvs
+$ export VIRTUALENVWRAPPER_PYTHON=`which python3`
 ```
 
 This instructs the `virtualenvwrapper` utility to store all of your virtual environments in the folder `.virtualenvs/` in your home directory.
