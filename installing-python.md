@@ -1,8 +1,8 @@
-# Installing Python
-
-*Note: There are some lingering bugs in this installing guide. Most of the instructions are still good-to-go, but be aware this document is a work in progress.*
+# Installing Python 3 with Virtual Environments
 
 In CS41, you'll be writing lots of Python code! Therefore, it's important that you get your development environment ready-to-go as soon as possible.
+
+These instructions are only for Mac OS X and Linux. If you are developing on a Windows computer, see the [Installing Python for Windows](https://docs.google.com/document/d/1tlARF6fipUhwmMru-hdL-avxLrYwPg1KVEIE3L73S48/edit?usp=sharing) setup guide.
 
 ## Short Version
 
@@ -11,7 +11,7 @@ In CS41, you'll be writing lots of Python code! Therefore, it's important that y
 3. Create a virtual environment
 4. Install useful packages
 
-*Disclaimer: These installation instructions have only been tested on Mac OS X - if you find any errors, please let us know! In particular, the Windows instructions are entirely untested.* 
+*Disclaimer: These installation instructions have only been tested on Mac OS X - if you find any errors on Linux, please let us know!* 
 
 
 ## Installing Python 3.4.3
@@ -36,14 +36,6 @@ $ sudo make install
 *More information on the Linux installation process can be found in the README included in the tarball.*
 
 ---
-### Windows
-If you're running Windows, you need to download an MSI installer, either for [x86-64](https://www.python.org/ftp/python/3.4.3/python-3.4.3.amd64.msi) or [x86](https://www.python.org/ftp/python/3.4.3/python-3.4.3.msi). From there, follow the on-screen instructions to finish installing Python.
-
-**Caution: When you are given the option of unchecking any 'optional' components, don't uncheck any. In particular, on the “Customize Python 3.4” screen, there should be an option called “Add python.exe to search path”. Make sure that box is checked!**
-
-As an alternative, you can consider the possibility of using a specialized shell that works better with Python development, like PowerShell, or of running a Virtual Machine (on Linux) for your development work.
-
----
 
 Let's check to see if Python is installed correctly!
 
@@ -62,15 +54,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
 
-If you don't (and you're on Windows), instead try running
-
-```
-$ py -3
-```
-
-If that solved the problem, then everywhere you see `python3` below, replace it with `py -3`. 
-
-Try writing some Python in the interactive interpreter! When you're done, you can exit the interactive interpreter with CTRL+D (CTRL+C on Windows) or by entering `quit()` at the Python command prompt.
+Try writing some Python in the interactive interpreter! When you're done, you can exit the interactive interpreter with CTRL+D or by entering `quit()` at the Python command prompt.
 
 ## Getting `pip`
 
@@ -87,11 +71,9 @@ If it worked, great! If not, check with a member of the course staff before prog
 
 ## Configuring Virtual Environment
 
-*Note: If you're using Windows, read through the OS X / Linux instructions below, and then use the Windows-specific installation instructions at the bottom of this section.
+The following instructions apply to Mac OS X and Linux.
 
-### On Mac OS X and Linux
-
-Next, we'll install `virtualenvwrapper`. This third-party software allows for the creation of isolated Python environments, so there is no conflict in the event that you maintain multiple Python installations on your device. You will need to grant root privileges to the installation script (thus the `sudo`), so you may need to enter your password. On Windows, ig
+Next, we'll install `virtualenvwrapper`. This third-party software allows for the creation of isolated Python environments, so there is no conflict in the event that you maintain multiple Python installations on your device. You will need to grant root privileges to the installation script (thus the `sudo`), so you may need to enter your password.
 
 Note: `virtualenvwrapper` only works with `bash`, `ksh`, and `zsh`.
 
@@ -123,7 +105,39 @@ Next, we'll need to do some one-time setup to configure the virtual environment 
 
 ```
 $ export WORKON_HOME=$HOME/.virtualenvs
-$ source /usr/local/bin/virtualenvwrapper.sh
+```
+
+This instructs the `virtualenvwrapper` utility to store all of your virtual environments in the folder `.virtualenvs/` in your home directory.
+
+Next, let's see where we installed the `virtualenvwrapper.sh` script.
+
+On a Mac, the easiest way to do this is with `mdfind`, which emulates the behavior of Spotlight.
+
+```
+$ mdfind virtualenvwrapper.sh
+/Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh
+/usr/local/bin/virtualenvwrapper.sh
+$
+```
+
+Copy the first result to your clipboard. If you see no results, or if you see an error like `mdfind: Command not found.`, try the (slower but also effective) command:
+
+```
+$ find / -name virtualenvwrapper.sh
+< ... lots of output ... >
+/Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh
+/usr/local/bin/virtualenvwrapper.sh
+$
+```
+
+Copy the first result to your clipboard if you didn't have any luck with `mdfind`.
+
+If there are no results from the `find` command, go back and make sure that you have successfully installed `virtualenvwrapper`. If further problems persist, contact a staff member.
+
+Next, we're going to set up our virtual environment manager:
+
+```
+$ source <path/to/virtualenvwrapper.sh>
 virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/premkproject
 virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/postmkproject
 virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/initialize
@@ -137,6 +151,9 @@ virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/preactivate
 virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/postactivate
 virtualenvwrapper.user_scripts creating /Users/sredmond/.virtualenvs/get_env_details 
 ```
+where `<path/to/virtualenvwrapper.sh>` is the path that you found and copied in the previous step.
+
+For example, you might run `source /Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh` or `source /usr/local/bin/virtualenvwrapper.sh`
 
 In order to make sure everything went smoothly, run `workon` from the command prompt. This command prints a list of environments, currently empty.
 
@@ -169,12 +186,6 @@ cs41
 $
 ```
 
-### On Windows
-
-On Windows, installing `virtualenvwrapper` is a little strange. Instead of `python3 -m pip install virtualenvwrapper`, you should run `python3 -m pip install virtualenvwrapper-win`, or `py -3 -m pip install virtualenvwrapper`. You shouldn't need to export a `WORKON_HOME` environmental variable, nor `source` any shell scripts. You don't need to pass any `--python` arguments to the `mkvirtualenv` script - it will use whatever version of Python it finds. This means that, if you happen to already have Python 2 installed on your Windows machine, you'll need to find some other solution. The internet suggests `pywin` but I have no good advice here.
-
-Everything else should be the same.
-
 ### Observations
 
 You may notice that your command prompt now has the name of the active environment, cs41, printed before it. For example, if your old command prompt was
@@ -186,6 +197,7 @@ sredmond:stanfordpython$
 your new command prompt would be
 
 ```
+sredmond:stanfordpython$ workon cs41
 (cs41)sredmond:stanfordpython$ 
 ```
 
@@ -225,7 +237,6 @@ Run the following commands. You should see lots of output, but I've omitted it h
 ```
 (cs41)$ pip install --upgrade pip   # Make sure `pip` is the newest version
 (cs41)$ pip install "ipython[all]"  # For ipython interactive interpreter and more
-(cs41)$ pip install requests        # Web client, too good to pass up
 ```
 
 Most relevantly, you should now have access to `ipython`, an interactive Python interpreter that is vastly superior to the default Python interpreter. You can read an overview [here](http://ipython.readthedocs.org/en/stable/overview.html) if you'd like. To make sure `ipython` is configured correctly, run it from a command prompt, and ensure that you get something similar to the below.
@@ -248,12 +259,14 @@ In [1]:
 Every time you develop code for CS41, you will need to run `workon cs41` in order to activate your virtual environment. Again, to deactivate it, you can run `deactivate`. It might be convenient to add `workon cs41` to your shell startup script.
 
 On Mac OS X running bash, you can accomplish this with
+
 ```
 $ echo "workon cs41" >> ~/.bash_profile
 ```
-although there are corresponding commands for other operating systems and shells.
 
-### Text Editors
+If you have a differnet shell startup script (for example, `~/.profile`), you will need to append the same line to the end of that startup script.
+
+### Aside: Text Editors
 
 In CS41, we'll be using Sublime Text 3 for development, although Sublime Text 2 will also be fine. You are, of course, free to choose any text editor you please (vim/emacs/nano/xcode/idle/atom/textedit/notepad/etc). On most operating systems, you can provide a default application to open all files of a given type. In our case, you may find it helpful to make every `.py` file open in Sublime Text.
 
