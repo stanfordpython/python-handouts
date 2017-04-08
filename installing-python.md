@@ -263,6 +263,7 @@ On Mac OS X running bash, you can accomplish this with
 
 ```
 $ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bash_profile
+$ echo "export VIRTUALENVWRAPPER_PYTHON=`which python3`" >> ~/.bash_profile
 $ echo "source <path/to/virtualenvwrapper.sh>" >> ~/.bash_profile 
 $ echo "workon cs41" >> ~/.bash_profile
 ```
@@ -273,6 +274,7 @@ To see that everything was appended correctly, run
 $ tail ~/.bash_profile
 < ... possibly some other stuff ... >
 export WORKON_HOME=/Users/sredmond/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=<path/to/python3>
 source /Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh
 workon cs41
 ```
