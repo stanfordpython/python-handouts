@@ -263,9 +263,17 @@ On Mac OS X running bash, you can accomplish this with
 
 ```
 $ echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bash_profile
-$ echo "source <path/to/virtualenvwrapper.sh>" >> ~/.bash_profile 
+$ echo "export VIRTUALENVWRAPPER_PYTHON=`which python3`" >> ~/.bash_profile
+$ echo "source <path/to/virtualenvwrapper.sh>" >> ~/.bash_profile
+```
+
+Additionally, if you want to automatically activate the CS41 virtual environment when you start a new shell session, you can also run:
+
+```
 $ echo "workon cs41" >> ~/.bash_profile
 ```
+
+so that `workon cs41` is executed at shell startup time.
 
 To see that everything was appended correctly, run
 
@@ -273,8 +281,9 @@ To see that everything was appended correctly, run
 $ tail ~/.bash_profile
 < ... possibly some other stuff ... >
 export WORKON_HOME=/Users/sredmond/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/Library/Frameworks/Python.framework/Versions/3.4/bin/python3
 source /Library/Frameworks/Python.framework/Versions/3.4/bin/virtualenvwrapper.sh
-workon cs41
+workon cs41  # Optional
 ```
 
 or something similar.
