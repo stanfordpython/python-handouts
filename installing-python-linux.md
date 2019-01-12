@@ -1,4 +1,4 @@
-# Installing Python on macOS
+# Installing Python on Linux
 
 Hello!
 
