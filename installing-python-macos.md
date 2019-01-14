@@ -194,7 +194,7 @@ After, we'll install the suite of Jupyter tools and some additional useful packa
 
 ```
 # Really, really make sure that you have activated `cs41-env` before running this line!
-(cs41-env) sredmond$ pip install "ipython[all]" jupyter numpy scipy matplotlib nltk scikit-learn requests pycodestyle autopep8 Pillow
+(cs41-env) sredmond$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests pycodestyle autopep8 Pillow
 ```
 
 This will produce a huge amount of output, as Python is downloading these third-party libraries and tools from the internet and storing them inside our virtual environment. These packages will be available when our virtual environment is activated, but will not necessarily be available if our virtual environment is disactivated. For this reason, it's important to always have an active virtual environment when working on code in this class.
@@ -427,7 +427,7 @@ Lastly, install the useful Python packages discussed above into this virtual env
 
 ```
 (cs41-env)$
-$ pip install "ipython[all]" jupyter numpy scipy matplotlib nltk scikit-learn requests pep8 autopep8 Pillow
+$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests pep8 autopep8 Pillow
 ```
 
 ### Startup Commands and Cleanup
