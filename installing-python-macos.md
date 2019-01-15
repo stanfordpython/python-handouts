@@ -2,7 +2,7 @@
 
 Hello!
 
-This document provides a walkthrough to set up a Python development environment for CS41 on macOS. Alternate versions of this guide exist for [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) and [Windows](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-windows.md) development.
+This document provides a walkthrough to set up a Python development environment for [CS41](https://stanfordpython.com) on macOS. Alternate versions of this guide exist for [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) and [Windows](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-windows.md) development.
 
 ## Overview
 
