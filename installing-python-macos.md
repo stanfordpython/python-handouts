@@ -258,7 +258,7 @@ In this course, we always assume that you are operating in an active virtual env
 
 ### Optional: Automatically enable `cs41-env`
 
-If you want to automatically enable the `cs41-env` virtual environment every time you start a new interactive session, you can add a command the your shell's startup script. In most cases, this will be `~/.bash_profile` or `~/.bashrc`, which are different but in ways we don't care about. Run:
+If you want to automatically enable the `cs41-env` virtual environment every time you start a new interactive session, you can add a command to your shell's startup script. In most cases, this will be `~/.bash_profile` or `~/.bashrc`, which are different but in ways we don't care about. Run:
 
 ```
 sredmond$ echo "# Activate virtual environment for CS41." >> ~/.bash_profile
