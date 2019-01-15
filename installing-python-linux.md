@@ -34,15 +34,19 @@ On different Linux systems, there are a couple of different ways to install and 
 
 ### Installing with `apt-get` (Ubuntu, Debian)
 
-`apt-get` is Linux's Advanced Package Tool, and is very useful for installing, managing, upgrading, and removing packages on Debian, Ubuntu, and a few other Linux distributions. It looks like `apt-get` doesn't have a Python3.7 package, so you will have to install whatever the latest version of Python is.
+`apt-get` is Linux's Advanced Package Tool, and is very useful for installing, managing, upgrading, and removing packages on Debian, Ubuntu, and a few other Linux distributions. We'll use [Felix Krull's PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/ppa) to install specific Python versions. 
 
 ```
-$ sudo apt-get install python3
+$ sudo add-apt-repository ppa:deadsnakes/ppa
+$ sudo apt-get update
+$ sudo apt-get install python3.7
 ```
+
+On Debian, we'll just have to `sudo apt-get install python3` and hope for the best. Also note that this might install a different version of Python 3.7 (e.g. Python 3.7.1), but we won't worry about that here.
 
 ### Installing with `yum` (RedHat, CentOS)
 
-Other Linux distributions use a different package manager, `yum`. We don't have any test devices with these Linux distributions, so you're on your own here. There is a reasonably good tutorial for CentOS [here](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7) and 
+Other Linux distributions use a different package manager, `yum`. We don't have any test devices with these Linux distributions, so you're on your own here. There is a reasonably good tutorial for CentOS [here](https://www.digitalocean.com/community/tutorials/how-to-install-python-3-and-set-up-a-local-programming-environment-on-centos-7).
 
 ### Other Linux package managers
 
