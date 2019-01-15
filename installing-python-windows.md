@@ -10,14 +10,14 @@ We recommend Strategy 1, as it will give you a development environment that is s
 
 We discourage Strategy 2, as it is the most complicated and hardest for us to debug.
 
-We are fine with Strategy 3, although it is essentially just avoiding the problem by throwing computatioal resources at it.
+We are fine with Strategy 3, although it is essentially just avoiding the problem by throwing computational resources at it.
 
 If Strategy 1 or Strategy 2 fail horribly, strategy 3 will definitely work, but is fairly resource intensive.
 
 So, we recommend trying out Strategy 1 first. If that fails, decide whether you are willing to allocate a nontrivial amount of computing resources to this course. If so, proceed with Strategy 3. If not, proceed with Strategy 2.
 
 ## (1) Bash on Ubuntu on Windows
-Requires: 64-bit Windows 10, updated to the 2016 Anniversary build or later. *If you regularly download updates, you'll be fine*.
+Requires: 64-bit Windows 10, updated to the 2016 Anniversary build or later. *If you regularly download updates, you'll be fine.*
 
 Windows 10 has added a Ubuntu subsystem which we will use for development in this class. In particular, we'll use the Ubuntu system to download Python and to create a virtual environment for this course.
 
@@ -52,7 +52,7 @@ The command `source "${HOME}/cs41-env/bin/activate"` is especially important. **
 
 You can tell if a virtual environment is active by looking for the parenthesized `(cs41-env)` prefix.
 
-Working with Windows is complicated enough, so we're going to omit the instructions for how to use `virtualenvwrapper` to set up managed virtual environment. If you're really interested, you can follow the macOS instructions for `virtualenvwrapper`.
+Working with Windows is complicated enough, so we're going to omit the instructions for how to use `virtualenvwrapper` to set up managed virtual environments. If you're really interested, you can follow the macOS instructions for `virtualenvwrapper`.
 
 ## (2) Running Directly on Windows
 
@@ -123,11 +123,7 @@ At a command prompt, run the following code. You should see something like the f
 pip 18.1 from /pip 18.1 from C:\Users\Sam\AppData\Local\Programs\Python\Python37\lib\site-packages (python 3.7)
 ```
 
-Problems might arise if you had a different version of Python 3 already installed, but if you added Python 3.7 to your PATH, this should work. You can update your version of `pip` with:
-
-```
-> python3 -m pip install --upgrade pip
-```
+Problems might arise if you had a different version of Python 3 already installed, but if you added Python 3.7 to your PATH, this should work.
 
 ### Create a Virtual Environment
 
@@ -177,14 +173,14 @@ It can be very hard to properly set up development environments on Windows. We'r
 
 Great! We're halfway there.
 
-Next, you'll need to download a Unix OS. We recommend using [Ubuntu 18.04](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64).
+Next, you'll need to download a Unix OS. We recommend using [Ubuntu 18.04](https://www.ubuntu.com/download/desktop/thank-you?version=18.04.1&architecture=amd64). Now, 
 
 1. Launch VirtualBox by double-clicking on the downloaded executable.
 2. Create a new VM instance and point the prompt to the Ubuntu ISO you just downloaded.
 3. VirtualBox will prompt you to configure lots of settings for your new virtual machine. You can use the defaults, or you can adjust the settings if you know what you are doing. Roughly speaking, the more resources you give to your VM, the fewer your normal non-VM computer has.
-	a. You can name your operating system something like `cs41-vm` 
+	a. You can name your virtual machine something like `cs41-vm` 
 4. Click through the on-screen instructions to finish setting up Ubuntu.
 
 Ubuntu is a Linux distribution, so from here you should follow the [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) guide that has already been posted.
 
-If you'd like to be oriented to VirtualBox itself, they have posted [a manual](https://www.virtualbox.org/manual/ch01.html) (warning: it's pretty long) that covers First Steps with VirtualBox. If you only read one section, we recommend Section 1.9: Running Your Virtual Machine.
+If you'd like to be oriented to VirtualBox itself, they have posted [a manual](https://www.virtualbox.org/manual/ch01.html) (warning: it's pretty long) that covers First Steps with VirtualBox. If you only read one section, we recommend "Section 1.9: Running Your Virtual Machine."
