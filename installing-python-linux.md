@@ -52,7 +52,7 @@ The world of Linux distributions is unfathomably large. If you can pull off a Py
 
 Installing Python from source follows the same pattern as most other source installations.
 
-First, download the source tarball (either [gzipped](https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tgz) or [XZ compressed](https://www.python.org/ftp/python/3.4.3/Python-3.4.3.tar.xz)). Unzip the files and `cd` into the unzipped directory.
+First, download the source tarball (either [gzipped](https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tgz) or [XZ compressed](https://www.python.org/ftp/python/3.7.2/Python-3.7.2.tar.xz)). Unzip the files and `cd` into the unzipped directory.
 
 To build Python, just execute the usual commands:
 
