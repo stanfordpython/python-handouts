@@ -270,7 +270,7 @@ source ~/cs41-env/bin/activate
 
 This will cause the command `source ~/cs41-env/bin/activate` to be executed every time you open a new terminal session. Since this script gets executed every time you create a new terminal session, the `cs41-env` will be automatically activated. It can still be deactivated by running `deactivate`.
 
-*Note: If you are using a different shell (`tcsh`, `zsh`, etc) than `bash`, you will need to place this startup command in your appropriate startup script, such as `.tcshrc` or `.zshrc`.*
+*Note: If you are using a different shell (`tcsh`, `zsh`, etc) than `bash`, you will need to place this startup command in your appropriate startup script, such as `~/.tcshrc` or `~/.zshrc`.*
 
 ## A "better" alternative: `virtualenvwrapper`
 
