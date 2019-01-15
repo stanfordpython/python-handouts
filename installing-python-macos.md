@@ -92,7 +92,7 @@ In this case, the version of Python 3 your computer wants to run is not the Pyth
 
 ## Create a virtual environment
 
-We've correctly installed Python, so next we will create a virtual environment. You can learn more about virtual environments [here](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-windows.md) or at the end of our [lecture slides](https://stanfordpython.com/#lectures) on Python fundamentals, but for now it is sufficient to think of a virtual environment as an isolated sandbox for Python packages and dependencies.
+We've correctly installed Python, so next we will create a virtual environment. You can learn more about virtual environments [here](https://github.com/stanfordpython/python-handouts/blob/master/virtual-environments.md) or at the end of our [lecture slides](https://stanfordpython.com/#lectures) on Python fundamentals, but for now it is sufficient to think of a virtual environment as an isolated sandbox for Python packages and dependencies.
 
 Specifically, we will create a folder named `cs41-env` in your computer's home folder. The configuration of our virtual environment will live entirely inside of this folder.
 
