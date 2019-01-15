@@ -1,7 +1,7 @@
 # Virtual Environments
 
 ## What is a virtual environment?
-A virtual environment is simply an isolated folder that contains all the executables you need to build something awesome in Python, including code to run the interpreter, use the standard library (https://docs.python.org/3.4/library/), and install other 3rd-party libraries that we'll touch on towards the end of the quarter. 
+A virtual environment is simply an isolated folder that contains all the executables you need to build something awesome in Python, including code to run the interpreter, use the standard library (https://docs.python.org/3.4/library/), and install other 3rd-party libraries that we'll touch on towards the end of the quarter.
 
 ## Why bother using virtual environments?
 Of course, you can also develop Python projects without a virtual environment, but it's a good idea to become familiar with this tool because you can avoid dependency conflicts between your system-wide Python installations and your project-specific Python installations. For example, if you're using Python to build 3 separate Web apps because you're a beast, Project A might depend on Django version 1.2 while Project C depends on Django version 1.9 (yes, Django is the name of a real Web framework: https://docs.djangoproject.com/en/1.9/releases/). You can create a separate virtual environment for each project then install whichever version you need in each project. When you ship awesome projects later in your Python career, you'll know the exact libraries and versions that your project requires (:
