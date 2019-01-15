@@ -34,7 +34,7 @@ Navigate to the [Python 3.7.2 download page](https://www.python.org/downloads/re
 
 Scroll to the bottom of the page to the section labelled "Files."
 
-Install the Python distribution that corresponds to your version of macOS. If you are running OS X 10.9 (Mavericks) or later, download the ["macOS 64-bit installer."](https://www.python.org/ftp/python/3.7.2/python-3.7.2-macosx10.9.pkg). If you are running OS X 10.6 (Snow Leopard), OS X 10.7 (Lion), or OS X 10.8 (Mountain Lion), you will need to download the ["macOS 64-bit/32-bit installer"](https://www.python.org/ftp/python/3.7.2/python-3.7.2-macosx10.6.pkg). If you need, you can determine which macOS your computer is running with [these instruction from Apple](https://support.apple.com/en-us/HT201260).
+Install the Python distribution that corresponds to your version of macOS. If you are running OS X 10.9 (Mavericks) or later, download the ["macOS 64-bit installer."](https://www.python.org/ftp/python/3.7.2/python-3.7.2-macosx10.9.pkg). If you are running OS X 10.6 (Snow Leopard), OS X 10.7 (Lion), or OS X 10.8 (Mountain Lion), you will need to download the ["macOS 64-bit/32-bit installer"](https://www.python.org/ftp/python/3.7.2/python-3.7.2-macosx10.6.pkg). If you need, you can determine which macOS your computer is running with [these instructions from Apple](https://support.apple.com/en-us/HT201260).
 
 After downloading, double-click the downloaded file, and follow the on-screen instructions.
 
