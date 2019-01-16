@@ -28,8 +28,10 @@ One quick note here: Your Windows file system is located at `/mnt/c` in the Bash
 Once you're in the `bash` shell, you can follow the [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) guide, which has more details. If you're just getting started, you may also need to run the following commands:
 
 ```
+$ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt-get update
-$ sudo apt-get install python3
+$ sudo apt-get install python3.7
+$ sudo apt-get install python3.7-venv
 ```
 
 You can check which version of Python you've installed by running:

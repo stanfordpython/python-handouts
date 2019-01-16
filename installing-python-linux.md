@@ -40,6 +40,7 @@ On different Linux systems, there are a couple of different ways to install and 
 $ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt-get update
 $ sudo apt-get install python3.7
+$ sudo apt-get install python3.7-venv
 ```
 
 On Debian, we'll just have to `sudo apt-get install python3` and hope for the best. Also note that this might install a different version of Python 3.7 (e.g. Python 3.7.1), but we won't worry about that here.
