@@ -12,7 +12,7 @@ You may be familiar with the Paperless submission process from the CS106 series 
 4. Select which assignment you would like to submit from the dropdown. Once you do this, an area should appear where you may upload your assignment files.
 5. Drag and drop your assignment files into the area marked "Files."" This will add to the list of files to upload. 
 6. Click "Submit Assignment". Once your project is submitted, you will be taken back to the main page of the Paperless website.
-7. Confirm that your files were properly submitted. You can view your submission on the Paperless website, which is what your Section Leader will see when grading your submission, by clicking on the "Assignments" tab at the top. You are responsible for checking Paperless to make sure that your files were submitted properly.
+7. Confirm that your files were properly submitted. You can view your submission on the Paperless website, which is what the grader will see when grading your submission, by clicking on the "Assignments" tab at the top. You are responsible for checking Paperless to make sure that your files were submitted properly.
 
 You may make as many new submissions as you would like by repeating the steps above. We will receive only the most recent submission.
 
