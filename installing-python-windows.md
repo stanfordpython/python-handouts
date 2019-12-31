@@ -12,7 +12,7 @@ We discourage Strategy 2, as it is the most complicated and hardest for us to de
 
 We are fine with Strategy 3, although it is essentially just avoiding the problem by throwing computational resources at it.
 
-If Strategy 1 or Strategy 2 fail horribly, strategy 3 will definitely work, but is fairly resource intensive.
+If Strategy 1 or Strategy 2 fail horribly, Strategy 3 will definitely work, but is fairly resource intensive.
 
 So, we recommend trying out Strategy 1 first. If that fails, decide whether you are willing to allocate a nontrivial amount of computing resources to this course. If so, proceed with Strategy 3. If not, proceed with Strategy 2.
 
@@ -30,15 +30,15 @@ Once you're in the `bash` shell, you can follow the [Linux](https://github.com/s
 ```
 $ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt-get update
-$ sudo apt-get install python3.7
-$ sudo apt-get install python3.7-venv
+$ sudo apt-get install python3.8
+$ sudo apt-get install python3.8-venv
 ```
 
 You can check which version of Python you've installed by running:
 
 ```
 $ python3 --version
-Python 3.7.2
+Python 3.8.0
 ```
 
 In broad strokes, you will need to run the following commands to set up a virtual environment. The Linux and macOS handouts contain more detailed information.
@@ -46,7 +46,7 @@ In broad strokes, you will need to run the following commands to set up a virtua
 ```
 $ python3 -m venv "${HOME}/cs41-env"
 $ source "${HOME}/cs41-env/bin/activate"
-(cs41-env)$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests pycodestyle autopep8 Pillow
+(cs41-env)$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 (cs41-env)$ deactivate
 ```
 
@@ -60,7 +60,7 @@ Working with Windows is complicated enough, so we're going to omit the instructi
 
 Recall that we discourage this option as it is very complex and hard for us to debug. Only use this option if the above fails and you don't want to use a VM (Strategy 3) for some reason.
 
-You will need Windows Vista or newer to use Python 3.7.2 on Windows.
+You will need Windows Vista or newer to use Python 3.8.0 on Windows.
 
 When in doubt, the source of truth for Windows commands is [included in the Python documentation](https://docs.python.org/3/using/windows.html), and you can find more details on using virtual environments [here](https://docs.python.org/3/library/venv.html#module-venv).
 
@@ -70,13 +70,13 @@ The rough outline is:
 2. Create a virtual environment.
 3. Use `pip` to install useful packages.
 
-First, download the web-based installer from the [Python 3.7.2 releases page](https://www.python.org/downloads/release/python-372/), either for [x86-64](https://www.python.org/ftp/python/3.7.2/python-3.7.2-amd64-webinstall.exe) or [x86](https://www.python.org/ftp/python/3.7.2/python-3.7.2-webinstall.exe). The web-based installer is a small download which will connect to the internet to download any additional required components, so make sure that you are connected to the internet for the remainder of these installation instructions.
+First, download the web-based installer from the [Python 3.8.0 releases page](https://www.python.org/downloads/release/python-380/), either for [x86-64](https://www.python.org/ftp/python/3.8.0/python-3.8.0-amd64-webinstall.exe) or [x86](https://www.python.org/ftp/python/3.8.0/python-3.8.0-webinstall.exe). The web-based installer is a small download which will connect to the internet to download any additional required components, so make sure that you are connected to the internet for the remainder of these installation instructions.
 
-Start the installer. You will see two options: "Install launcher for all users (recommended)" and "Add Python 3.7 to PATH". Make sure both are selected, and then click "Install Now."
+Start the installer. You will see two options: "Install launcher for all users (recommended)" and "Add Python 3.8 to PATH". Make sure both are selected, and then click "Install Now."
 
 *Note: Technically, you should also [remove the MAX_PATH limitation](https://docs.python.org/3/using/windows.html#removing-the-max-path-limitation), but we'll skip that for now.*
 
-Follow the on-screen instructions to finish installing Python. When you are given the option of unchecking any 'optional' components, do not uncheck any. In particular, if there is an option called "Add python.exe to search path" on the "Customize Python 3.7" screen, make sure that box is checked! You should also see that `pip` is being installed by default.
+Follow the on-screen instructions to finish installing Python. When you are given the option of unchecking any 'optional' components, do not uncheck any. In particular, if there is an option called "Add python.exe to search path" on the "Customize Python 3.8" screen, make sure that box is checked! You should also see that `pip` is being installed by default.
 
 Let's check to see that everything was installed correctly.
 
@@ -89,7 +89,7 @@ Open up PowerShell or `cmd.exe` and run the following from a command prompt:
 You should see something like the following:
 
 ```
-Python 3.7.2 (v3.7.2:9a3ffc0492, Dec 24 2018, 02:44:43)
+Python 3.8.0 (v3.8.0:fa919fdf25, Oct 14 2019, 10:23:27)
 [Clang 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -103,7 +103,7 @@ If that doesn't work, try running:
 > python
 ```
 
-If this drops you into a Python 3.7.2 interactive interpreter, great! In this case, everywhere you see `python3` below, replace it with the command `python`.
+If this drops you into a Python 3.8.0 interactive interpreter, great! In this case, everywhere you see `python3` below, replace it with the command `python`.
 
 If this didn't work, try running:
 
@@ -116,16 +116,16 @@ If this worked, then everywhere you see `python3` below, replace it with the com
 Try writing some Python in the interactive interpreter! When you're done, you can exit the interactive interpreter with `CTRL+C` or by entering `quit()` at the Python command prompt.
 
 ### Checking `pip`
-First, let's check that we have `pip` installed. For CS41, we'll be using a package manager called `pip` to install and manage Python software packages. By default, Python 3.7.2 ships with a version of `pip` prebuilt. `pip` interacts very well with PyPI (the Python Package Index), so we'll be using `pip` extensively this quarter.
+First, let's check that we have `pip` installed. For CS41, we'll be using a package manager called `pip` to install and manage Python software packages. By default, Python 3.8.0 ships with a version of `pip` prebuilt. `pip` interacts very well with PyPI (the Python Package Index), so we'll be using `pip` extensively this quarter.
 
 At a command prompt, run the following code. You should see something like the following output:
 
 ```
 > python3 -m pip --version
-pip 18.1 from /pip 18.1 from C:\Users\Sam\AppData\Local\Programs\Python\Python37\lib\site-packages (python 3.7)
+pip 19.3 from /pip 19.3 from C:\Users\Parth\AppData\Local\Programs\Python\Python38\lib\site-packages (python 3.8)
 ```
 
-Problems might arise if you had a different version of Python 3 already installed, but if you added Python 3.7 to your PATH, this should work.
+Problems might arise if you had a different version of Python 3 already installed, but if you added Python 3.8 to your PATH, this should work.
 
 ### Create a Virtual Environment
 
@@ -138,7 +138,7 @@ Great! Now, let's run the following commands:
 If you were having trouble with finding your Python executable in the previous section, you should be able to instead run the following, in which you specify the full path to all arguments:
 
 ```
-c:\> c:\Python37\python -m venv c:\path\to\myenv
+c:\> c:\Python38\python -m venv c:\path\to\myenv
 ```
 
 This will create a virtual environment in a folder named `cs41-env` inside your home folder.
@@ -162,7 +162,7 @@ As with other OSes, you can deactivate the virtual environment by running `deact
 Go ahead and activate your virtual environment, using the appropriate command above for either `cmd.exe` or PowerShell. Next, install the following packages into your virtual environment using `pip`:
 
 ```
-(cs41-env) > pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests pycodestyle autopep8 Pillow
+(cs41-env) > pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 ```
 
 When you're done with that, `deactivate` the virtual environment.
@@ -171,7 +171,7 @@ You're all set! Give yourself a pat on the back. Remember that every time you op
 
 ## (3) Use a Virtual Machine
 
-It can be very hard to properly set up development environments on Windows. We're going to give up on Windows, and instead we'll use VirtualBox to run an entire Linux operating system on your Windows computer. First, [download VirtualBox 6.0.0](http://download.virtualbox.org/virtualbox/6.0.0/VirtualBox-6.0.0-127566-Win.exe). Make sure you know where you have downloaded this file.
+It can be very hard to properly set up development environments on Windows. We're going to give up on Windows, and instead we'll use VirtualBox to run an entire Linux operating system on your Windows computer. First, [download VirtualBox 6.1.0](https://download.virtualbox.org/virtualbox/6.1.0/VirtualBox-6.1.0-135406-Win.exe). Make sure you know where you have downloaded this file.
 
 Great! We're halfway there.
 
