@@ -514,3 +514,6 @@ In [2]: quit()
 ```
 
 You did it! Celebrate with your friends.
+
+## Credit
+Much of this handout was based on a similar handout written by Sam Redmond (@samredmond)

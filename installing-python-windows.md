@@ -186,3 +186,6 @@ Next, you'll need to download a Unix OS. We recommend using [Ubuntu 18.04](https
 Ubuntu is a Linux distribution, so from here you should follow the [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) guide that has already been posted.
 
 If you'd like to be oriented to VirtualBox itself, they have posted [a manual](https://www.virtualbox.org/manual/ch01.html) (warning: it's pretty long) that covers First Steps with VirtualBox. If you only read one section, we recommend "Section 1.9: Running Your Virtual Machine."
+
+# Credit
+Much of this handout was based on a similar handout written by Sam Redmond (@samredmond)

@@ -81,3 +81,6 @@ From here, the instructions are almost exactly the same as the [macOS](https://g
 If you choose to use `virtualenvwrapper`, it will be installed in a platform-specific location. You will need to find this file. You can use the `find` command described in the linked document to search your computer for the downloaded file.
 
 If other unexpected differences come up between those instructions and your operating system, please let us know on Piazza so that we can update these instructions with distribution-specific dependencies.
+
+## Credit
+Much of this handout was based on a similar handout written by Sam Redmond (@samredmond)
