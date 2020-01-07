@@ -42,18 +42,27 @@ Let's double check that Python 3.8.0 was installed correctly.
 
 For the remainder of this setup document, we assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is usually covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
 
-The main takeaway is the following: If you see the line:
+The main takeaway is the following: If you something of the following form in this guide (you'll see this quite a few times!):
 
 ```
 psarin$ command
 ```
 
-Then copy and paste the command into your command line prompt. Open up a command line prompt (likely using Terminal.app or iTerm.app), and run the following commands:
+Then copy and paste the command into your command line prompt. 
+
+Two quick notes:
+
+1. The text before the `$` can vary dramatically. It is not necessarily your username. In this case, we are assuming that the username is `psarin` and that is the text which is shown before the `$` at your command prompt. (The below image illustrates a terminal in which the username does not appear directly before the `$`).
+2. Below is a quick example of how you may go about running the commands immediately following this list. This is designed to clear up any ambiguity related to running commands at the command line. 
+
+![](term_example.png)
+
+Open up a command line prompt (likely using Terminal.app or iTerm.app), and run the following commands:
 
 ```
 psarin$ which python3
 /Library/Frameworks/Python.framework/Versions/3.8/bin/python3
-sredmond$ python3 --version
+psarin$ python3 --version
 Python 3.8.0
 ```
 
