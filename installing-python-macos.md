@@ -203,7 +203,7 @@ After, we'll install the suite of Jupyter tools and some additional useful packa
 
 ```
 # Really, really make sure that you have activated `cs41-env` before running this line!
-(cs41-env) psarin$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
+(cs41-env) psarin$ pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 ```
 
 This will produce a huge amount of output, as Python is downloading these third-party libraries and tools from the internet and storing them inside our virtual environment. These packages will be available when our virtual environment is activated, but will not necessarily be available if our virtual environment is disactivated. For this reason, it's important to always have an active virtual environment when working on code in this class.
