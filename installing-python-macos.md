@@ -437,7 +437,7 @@ pip 19.3.1 from /Users/psarin/.virtualenvs/cs41-env/lib/python3.8/site-packages/
 Lastly, install the useful Python packages discussed above into this virtual environment. Make sure that you are executing this `pip install` command from an active virtual environment.
 
 ```
-(cs41-env)$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
+(cs41-env)$ pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 ```
 
 ### Startup Commands and Cleanup
