@@ -46,7 +46,7 @@ In broad strokes, you will need to run the following commands to set up a virtua
 ```
 $ python3 -m venv "${HOME}/cs41-env"
 $ source "${HOME}/cs41-env/bin/activate"
-(cs41-env)$ pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
+(cs41-env)$ pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 (cs41-env)$ deactivate
 ```
 
@@ -162,7 +162,7 @@ As with other OSes, you can deactivate the virtual environment by running `deact
 Go ahead and activate your virtual environment, using the appropriate command above for either `cmd.exe` or PowerShell. Next, install the following packages into your virtual environment using `pip`:
 
 ```
-(cs41-env) > pip install "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
+(cs41-env) > pip install "prompt-toolkit==2.0.10" "ipython[all]" jupyter jupyterlab numpy scipy matplotlib nltk scikit-learn requests flask pycodestyle autopep8 Pillow
 ```
 
 When you're done with that, `deactivate` the virtual environment.
