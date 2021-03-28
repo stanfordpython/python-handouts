@@ -2,7 +2,7 @@
 
 Hello!
 
-This document provides a walkthrough to set up a Python development environment for [CS41](https://stanfordpython.com) on macOS. Alternate versions of this guide exist for [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) and [Windows](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-windows.md) development.
+This document provides a walkthrough to set up a Python development environment for CS 41 on macOS. Alternate versions of this guide exist for [Linux](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-linux.md) and [Windows](https://github.com/stanfordpython/python-handouts/blob/master/installing-python-windows.md) development.
 
 ## Overview
 
@@ -119,7 +119,7 @@ coopermj$ source ~/cs41-env/bin/activate
 
 *Note: If your shell is `tcsh` or `csh`, you will have to run `source ~/cs41-env/bin/activate.csh` instead. If your shell is `fish`, you will have to run `. ~/cs41-env/bin/activate.fish` instead.*
 
-Observe that our command prompt, which previously was `psarin$`, now is `(cs41-env) psarin$`. This is one method by which you can see whether a virtual environment is activated.
+Observe that our command prompt, which previously was `coopermj$`, now is `(cs41-env) coopermj$`. This is one method by which you can see whether a virtual environment is activated.
 
 ### Deactivating a virtual environment
 
@@ -218,9 +218,9 @@ Importantly, you should now have access to `ipython`, an interactive Python inte
 
 ```
 (cs41-env)$ ipython
-Python 3.8.0 (v3.8.0:fa919fdf25, Oct 14 2019, 10:23:27)
+Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
 Type 'copyright', 'credits' or 'license' for more information
-IPython 7.9.0 -- An enhanced Interactive Python. Type '?' for help.
+IPython 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
 
 In [1]:
 ```
@@ -260,9 +260,9 @@ In this course, we always assume that you are operating in an active virtual env
 If you want to automatically enable the `cs41-env` virtual environment every time you start a new interactive session, you can add a command to your shell's startup script. In most cases, this will be `~/.bash_profile` or `~/.bashrc`, which are different but in ways that are not important to us right now. Run:
 
 ```
-psarin$ echo "# Activate virtual environment for CS41." >> ~/.bash_profile
-psarin$ echo "source ~/cs41-env/bin/activate" >> ~/.bash_profile
-psarin$ tail -n 2 ~/.bash_profile
+coopermj$ echo "# Activate virtual environment for CS41." >> ~/.bash_profile
+coopermj$ echo "source ~/cs41-env/bin/activate" >> ~/.bash_profile
+coopermj$ tail -n 2 ~/.bash_profile
 # Activate virtual environment for CS41.
 source ~/cs41-env/bin/activate
 ```
