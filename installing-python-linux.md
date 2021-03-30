@@ -18,7 +18,7 @@ Let's get started!
 
 ## Prerequisite
 
-We assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
+We assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1214/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
 
 ## Install Python 3.9.2
 
