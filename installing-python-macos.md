@@ -33,7 +33,7 @@ After downloading, double-click the downloaded file, and follow the on-screen in
 
 Let's double check that Python 3.9.2 was installed correctly.
 
-For the remainder of this setup document, we assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is usually covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1194/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
+For the remainder of this setup document, we assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is usually covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1214/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
 
 The main takeaway is the following: If you something of the following form in this guide (you'll see this quite a few times!):
 
