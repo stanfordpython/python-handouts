@@ -189,7 +189,7 @@ Now, we'll update `pip`, Python's builtin package manager, just to make sure it'
 
 ```
 (cs41-env) coopermj$ pip install --upgrade pip
-Requirement already up-to-date: pip in ./cs41-env/lib/python3.8/site-packages (21.0.1)
+Requirement already up-to-date: pip in ./cs41-env/lib/python3.9/site-packages (21.0.1)
 ```
 
 After, we'll install the suite of Jupyter tools and some additional useful packages.
