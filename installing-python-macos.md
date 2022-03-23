@@ -44,25 +44,23 @@ Two quick notes:
 1. The text before the `$` can vary. It is not necessarily your username. In this case, we are assuming that the username is `coopermj` and that is the text which is shown before the `$` at your command prompt. (On the terminal below, for example, the text before the prompt includes more than just the username, including the current directory).
 2. Below is a quick example of how you may go about running the commands immediately following this list. This is designed to clear up any ambiguity related to running commands at the command line. 
 
-![](term_example.png)
 
 Open up a command line prompt (likely using Terminal), and run the following commands:
 
 ```
 coopermj$ which python3
-/Library/Frameworks/Python.framework/Versions/3.9/bin/python3
+/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
 coopermj$ python3 --version
-Python 3.9.2
+Python 3.10.3
 ```
 
-If you see the output shown above, then Python 3.9.2 was installed correctly on your machine!
+If you see the output shown above, then Python 3.10.3 was installed correctly on your machine!
 
 Let's celebrate by writing some code! Run the following from a command prompt. You should see the following output, which leaves you at an interactive prompt, at which you can write Python code.
 
 ```
 coopermj$ python3
-Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
-[Clang 6.0 (clang-600.0.57)] on darwin
+Python 3.10.3 (v3.10.3:a342a49189, Mar 16 2022, 09:34:18) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>> print("Hello world!")
 Hello world!
@@ -76,17 +74,17 @@ Try writing some Python (perhaps `print("Hello world!")`) in the interactive int
 
 [Homebrew](https://brew.sh/) is "the missing package manager for macOS." It's a great way to install, upgrade, and manage many different types of packages on macOS, including Python. If you are not using `brew`, there is no requirement that you start for CS41. However, if you are already using `brew`, you might as well install Python through brew.
 
-Run `brew install python3`. This will fetch the latest version of Python (which might not be Python 3.9.2, but that's all we can do).
+Run `brew install python3`. This will fetch the latest version of Python (which might not be Python 3.10.3, but that's all we can do).
 
-Then, continue the process above, after the installation of Python 3.9.2.
+Then, continue the process above, after the installation of Python 3.10.3.
 
 ### Troubleshooting
 
 #### `which python3` shows no output
 The `which` command searches your computer for a program matching a name. If `which python3` shows no output, it means that your computer can't find any appropriate `python3`. Pause and reach out to a member of the course staff to help you debug. Include as much detail as you can about the problem.
 
-#### `python3 --version` does not show `Python 3.9.2`
-In this case, the version of Python 3 your computer wants to run is not the Python 3.9.2 that we just downloaded. Pause and reach out to a member of the course staff to help you debug. Include as much detail as you can about the problem.
+#### `python3 --version` does not show `Python 3.10.3`
+In this case, the version of Python 3 your computer wants to run is not the Python 3.10.3 that we just downloaded. Pause and reach out to a member of the course staff to help you debug. Include as much detail as you can about the problem.
 
 ## Create a virtual environment
 
@@ -96,7 +94,7 @@ Specifically, we will create a folder named `cs41-env` in your computer's home f
 
 ```
 coopermj$ python3 --version
-Python 3.9.2
+Python 3.10.3
 coopermj$ python3 -m venv ~/cs41-env
 ```
 
@@ -150,22 +148,22 @@ Moreover, observe that:
 
 ```
 (cs41-env) coopermj$ python3 --version
-Python 3.9.2
+Python 3.10.3
 (cs41-env) coopermj$ python --version
-Python 3.9.2
+Python 3.10.3
 (cs41-env) coopermj$ pip3 --version
-pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pip (python 3.9)
+pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pip (python 3.10)
 (cs41-env) coopermj$ pip --version
-pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pip (python 3.9)
+pip 21.0.1 from /Library/Frameworks/Python.framework/Versions/3.10/lib/python3.10/site-packages/pip (python 3.10)
 ```
 
-The big takeaway is that, inside our active virtual environment, the commands `python` and `pip` now refer to Python 3.9.2 and it's associated package manager.
+The big takeaway is that, inside our active virtual environment, the commands `python` and `pip` now refer to Python 3.10.3 and it's associated package manager.
 
 For example, when the virtual environment is active, we can enter an interactive Python 3 prompt simply by running:
 
 ```
 coopermj$ python
-Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+Python 3.10.3 (v3.10.3:1a79785e3e, Feb 19 2021, 09:06:10) 
 [Clang 6.0 (clang-600.0.57)] on darwin
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
@@ -185,7 +183,7 @@ Now, we'll update `pip`, Python's builtin package manager, just to make sure it'
 
 ```
 (cs41-env) coopermj$ pip install --upgrade pip
-Requirement already up-to-date: pip in ./cs41-env/lib/python3.9/site-packages (21.0.1)
+Requirement already up-to-date: pip in ./cs41-env/lib/python3.10/site-packages (21.0.1)
 ```
 
 After, we'll install the suite of Jupyter tools and some additional useful packages.
@@ -214,7 +212,7 @@ Importantly, you should now have access to `ipython`, an interactive Python inte
 
 ```
 (cs41-env)$ ipython
-Python 3.9.2 (v3.9.2:1a79785e3e, Feb 19 2021, 09:06:10) 
+Python 3.10.3 (v3.10.3:1a79785e3e, Feb 19 2021, 09:06:10) 
 Type 'copyright', 'credits' or 'license' for more information
 IPython 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
 
@@ -241,7 +239,7 @@ And that's it! You are all done setting up your Python development environment f
 
 ## Summary
 
-First, we installed Python 3.9.2 from the Python website and checked that everything was installed correctly. Next, we used `python3` to create a virtual environment named `cs41-env`, and we learned how to activate and deactivate this virtual environment. Lastly, we activated the environment and installed lots of useful packages.
+First, we installed Python 3.10.3 from the Python website and checked that everything was installed correctly. Next, we used `python3` to create a virtual environment named `cs41-env`, and we learned how to activate and deactivate this virtual environment. Lastly, we activated the environment and installed lots of useful packages.
 
 **Reminder: Each time you create a new terminal session, you will need to run `source ~/cs41-env/bin/activate`.**
 
