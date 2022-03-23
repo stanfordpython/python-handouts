@@ -10,14 +10,14 @@ In this course, you'll be writing lots of Python code, so it's important to get 
 
 Throughout this document, we will:
 
-1. Install Python 3.9.2
+1. Install Python 3.10.3
 2. Create a virtual environment using this version of Python.
 3. Inside this environment, install useful packages.
 4. (Optional) Modify the shell startup script to always activate our environment.
 
 Let's get started!
 
-## Install Python 3.9.2
+## Install Python 3.10.3
 
 *Note: If you use `brew` or another package manager for Python installations, see the note at the bottom of this section instead.*
 
