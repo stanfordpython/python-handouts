@@ -10,7 +10,7 @@ In this course, you'll be writing lots of Python code, so it's important to get 
 
 Throughout this document, we will:
 
-1. Install Python 3.9.2
+1. Install Python 3.10.3
 2. Create a virtual environment using this version of Python.
 3. Inside this environment, install useful packages.
 
@@ -20,7 +20,7 @@ Let's get started!
 
 We assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1214/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
 
-## Install Python 3.9.2
+## Install Python 3.10.3
 
 On different Linux systems, there are a couple of different ways to install and manage packages. We'll cover `apt-get` here, as well as how you can install from source.
 
@@ -31,11 +31,11 @@ On different Linux systems, there are a couple of different ways to install and 
 ```
 $ sudo add-apt-repository ppa:deadsnakes/ppa
 $ sudo apt-get update
-$ sudo apt-get install python3.9
-$ sudo apt-get install python3.9-venv
+$ sudo apt-get install python3.10
+$ sudo apt-get install python3.10-venv
 ```
 
-On Debian, we'll just have to `sudo apt-get install python3` and hope for the best. Also note that this might install a different version of Python 3.9, but we won't worry about that here.
+On Debian, we'll just have to `sudo apt-get install python3` and hope for the best. Also note that this might install a different version of Python 3.10, but we won't worry about that here.
 
 ### Installing with `yum` (RedHat, CentOS)
 
@@ -43,13 +43,13 @@ Other Linux distributions use a different package manager, `yum`. We don't have 
 
 ### Other Linux package managers
 
-The world of Linux distributions is unfathomably large. If you can pull off a Python 3.9 install on your distribution of choice, more power to you. However, we recommend building from source.
+The world of Linux distributions is unfathomably large. If you can pull off a Python 3.10 install on your distribution of choice, more power to you. However, we recommend building from source.
 
 ### Installing from source
 
 Installing Python from source follows the same pattern as most other source installations.
 
-First, download the source tarball (either [gzipped](https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tgz) or [XZ compressed](https://www.python.org/ftp/python/3.9.2/Python-3.9.2.tar.xz)). Unzip the files and `cd` into the unzipped directory.
+First, download the source tarball (either [gzipped](https://www.python.org/ftp/python/3.10.3/Python-3.10.3.tgz) or [XZ compressed](https://www.python.org/ftp/python/3.10.3/Python-3.10.3.tar.xz)). Unzip the files and `cd` into the unzipped directory.
 
 To build Python, just execute the usual commands:
 
