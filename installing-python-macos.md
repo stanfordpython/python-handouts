@@ -21,17 +21,13 @@ Let's get started!
 
 *Note: If you use `brew` or another package manager for Python installations, see the note at the bottom of this section instead.*
 
-Navigate to the [Python 3.9.2 download page](https://www.python.org/downloads/release/python-392/) in a web browser.
+Navigate to the [Python 3.10.3 download page](https://www.python.org/downloads/) in a web browser.
 
-Scroll to the bottom of the page to the section labelled "Files."
+Navigate to the top of the page where it says "Looking for Python with a different OS? Python for..." and select your operating system/computer mode.
 
-Install the Python distribution that corresponds to your version of macOS. If you are running OS X 10.9 (Mavericks) or later on an Intel processor, download the ["macOS 64-bit Intel installer."](https://www.python.org/ftp/python/3.9.2/python-3.9.2-macosx10.9.pkg). If you are running OS X 10.9 (Mavericks) or later on Apple Silicon, download the experimental ["macOS 64-bit universal2 installer"](https://www.python.org/ftp/python/3.9.2/python-3.9.2-macos11.pkg).
+After downloading, double-click the downloaded file, and follow the on-screen instructions to install Python 3.10.3
 
-If you are running OS X 10.6 (Snow Leopard), OS X 10.7 (Lion), or OS X 10.8 (Mountain Lion), you will need to download an older version of Python; Python 3.7.6 can be downloaded at [this link](https://www.python.org/downloads/release/python-376/) by clicking on the ["macOS 64-bit/32-bit installer"](https://www.python.org/ftp/python/3.7.6/python-3.7.6-macosx10.6.pkg). If you need, you can determine which macOS your computer is running with [these instructions from Apple](https://support.apple.com/en-us/HT201260).
-
-After downloading, double-click the downloaded file, and follow the on-screen instructions to install Python 3.9.2.
-
-Let's double check that Python 3.9.2 was installed correctly.
+Let's double check that Python 3.10.3 was installed correctly.
 
 For the remainder of this setup document, we assume that you have a basic familiarity with the command line. We understand that not everyone will feel comfortable with the command line, because it is usually covered starting in CS107. However, I highly recommend using Nick Troccoli's amazing [CS107 resources](https://web.stanford.edu/class/archive/cs/cs107/cs107.1214/resources/) for this quarter if you feel less experienced, particular the section titled "Common Unix Commands."
 
